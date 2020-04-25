@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newpackageQ2.ShowResultController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="401.0" prefWidth="602.0" style="-fx-background-color: #475450;">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="278.0" prefWidth="573.0" spacing="20.0">
+               <children>
+                  <TextArea fx:id="textArea" prefHeight="278.0" prefWidth="357.0" promptText="Write Ouery You Want To Execute It" />
+                  <TableView fx:id="tableView" prefHeight="278.0" prefWidth="378.0">
+                    <columns>
+                      <TableColumn fx:id="tcID" prefWidth="65.0" text="ID" />
+                      <TableColumn fx:id="tcName" prefWidth="74.0" text="Name" />
+                        <TableColumn fx:id="tcMajor" minWidth="0.0" prefWidth="81.0" text="Major" />
+                        <TableColumn fx:id="tcGrade" prefWidth="65.0" text="Grade" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="567.0">
+               <children>
+                  <Button fx:id="btnShowResult" mnemonicParsing="false" onAction="#btnShowResulthandle" prefHeight="30.0" prefWidth="124.0" stylesheets="@StudentApp.css" text="Show Result" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>
